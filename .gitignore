@@ -1,1 +1,6 @@
 *.env
+*.cargo.lock
+*/build
+*/target
+*/node_modules
+*/dist
