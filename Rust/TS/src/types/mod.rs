@@ -1,7 +1,3 @@
-// pub enum RustNumber{
-//     F64(f64),
-//     I64(i64)
-// }
 
 #[derive(Debug)]
 pub enum TSType {
@@ -17,23 +13,6 @@ pub enum TSType {
     Optional(String),
     Custom(String),
 }
-
-// enum RustBracketed {
-//     Option,
-//     Vec,
-//     None
-// }
-
-// impl Into<String> for RustBracketed {
-//     fn into(self) -> String {
-//         match self{
-//             RustBracketed::Option => "Option".into(),
-//             RustBracketed::Vec => "Vec".into(),
-//             RustBracketed::None => "".into(),
-//         }
-//     }
-// }
-
 
 
 impl Into<TSType> for String {
