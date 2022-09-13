@@ -1,7 +1,7 @@
 use proc_macro::{TokenStream};
 use quote::{quote,quote_spanned};
 use syn::{parse_macro_input, DeriveInput, spanned::Spanned};
-use helpers::extractType;
+
 
 #[proc_macro_derive(WebType,attributes(require))]
 pub fn derive(input:TokenStream) -> TokenStream {
